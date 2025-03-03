@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
  * Hello world!
  */
 public class App {
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
     	
     	
 //adding headless browser options to sync to Ubuntu
