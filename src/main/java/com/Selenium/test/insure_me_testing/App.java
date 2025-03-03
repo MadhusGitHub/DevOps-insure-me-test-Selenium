@@ -42,7 +42,7 @@ public class App {
          submitButton.click();
          Thread.sleep(2000);
         WebElement displaymessage = driver.findElement(By.id("response"));
-        displaymessage.getText();
+         System.out.println(displaymessage.getText());
         Thread.sleep(2000);
         Thread.sleep(2000);
         if(displaymessage.getText().equalsIgnoreCase("Message Sent"))
