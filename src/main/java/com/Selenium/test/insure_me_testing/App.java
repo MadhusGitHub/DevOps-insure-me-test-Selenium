@@ -14,7 +14,7 @@ public class App {
     	
     	
 //adding headless browser options to sync to Ubuntu
-    	System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+    	//System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
     	ChromeOptions options = new ChromeOptions();
     	options.addArguments("user-data-dir=C:/Users/user_name/AppData/Local/Google/Chrome/User Data");
     	options.addArguments("--start-maximized");    	
