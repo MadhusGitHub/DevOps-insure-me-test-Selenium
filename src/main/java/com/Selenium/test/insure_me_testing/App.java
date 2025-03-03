@@ -14,12 +14,13 @@ public class App {
     	
     	
 //adding headless browser options to sync to Ubuntu
-    	//System.setProperty("webdriver.chrome.driver","C:\\chromedriver.exe");
+    	System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
+    	
     	ChromeOptions options = new ChromeOptions();
-    	options.addArguments("user-data-dir=C:/Users/user_name/AppData/Local/Google/Chrome/User Data");
-    	options.addArguments("--start-maximized");    	
+    	options.addArguments("user-data-dir=C:\\Users\\madhu\\AppData\\Local\\Google\\Chrome\\User Data");
+    	 	
     	options.addArguments("--headless");
-    	    	
+    	
     	WebDriver driver = new ChromeDriver(options);
     	
     	driver.get("http://18.188.205.172:8082/contact.html");
