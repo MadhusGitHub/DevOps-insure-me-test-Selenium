@@ -13,9 +13,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>17</maven.compiler.source>
-    <maven.compiler.target>17</maven.compiler.target>
-  </properties>
+    <maven.compiler.release>17</maven.compiler.release>
+      </properties>
 
   <dependencyManagement>
     <dependencies>
@@ -62,7 +61,11 @@
             <artifactId>selenium-logger</artifactId>
             <version>2.4.0</version>
         </dependency>
-        
+        <dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.9.2</version>
+</dependency>
  </dependencies>
 
   <build>
