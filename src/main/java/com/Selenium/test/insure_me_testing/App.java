@@ -10,9 +10,9 @@ import org.openqa.selenium.chrome.ChromeOptions;
  * Hello world!
  */
 public class App {
-    public static void main(String[] args) {
-    	
-    	
+    public static void main(String[] args) throws InterruptedException
+    {
+    	  	
 //adding headless browser options to sync to Ubuntu
     	//System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
     	
