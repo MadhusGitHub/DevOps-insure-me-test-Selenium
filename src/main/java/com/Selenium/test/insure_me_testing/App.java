@@ -14,16 +14,15 @@ public class App {
     {
     	  	
 //adding headless browser options to sync to Ubuntu
-    	//System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe");
-    	
+    	   	
     	ChromeOptions options = new ChromeOptions();
-    	//options.addArguments("user-data-dir=C:\\Users\\madhu\\AppData\\Local\\Google\\Chrome\\User Data");
-    	 	
-    	options.addArguments("--headless");
+       options.addArguments("--headless");
     	
     	WebDriver driver = new ChromeDriver(options);
     	
-    	driver.get("http://3.142.83.130/contact.html");
+    	//WebDriverManager.chromedriver().setup();
+    	//driver = new ChromeDriver();
+    	driver.get("http://3.142.83.130:8082/contact.html");
     	
     	Thread.sleep(2000);
         System.out.println(driver.getTitle());
@@ -46,7 +45,7 @@ public class App {
          submitButton.click();
          Thread.sleep(2000);
         WebElement displaymessage = driver.findElement(By.id("response"));
-         System.out.println(displaymessage.getText());
+        System.out.println(displaymessage.getText());
         Thread.sleep(2000);
         Thread.sleep(2000);
         if(displaymessage.getText().equalsIgnoreCase("Message Sent"))
