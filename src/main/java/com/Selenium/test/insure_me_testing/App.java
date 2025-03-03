@@ -19,7 +19,7 @@ public class App {
     	
     	WebDriver driver = new ChromeDriver(options);
     	
-    	driver.get("http://3.17.66.244:8082/contact.html");
+    	driver.get("http://18.188.205.172:8082/contact.html");
     	
     	Thread.sleep(2000);
         System.out.println(driver.getTitle());
